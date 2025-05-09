@@ -15,8 +15,13 @@ find_package(Qt6 REQUIRED COMPONENTS
 
 qt_standard_project_setup()
 
+set(HEADERS
+    ../include/filedialog.h
+)
+
 set(SOURCE_FILES 
     main.cpp
+    filedialog.cpp
 )
 
 add_executable(transcriber ${SOURCE_FILES})
